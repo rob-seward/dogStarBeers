@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import BeerList from '../components/beerList';
+import BeerList from '../components/BeerList';
 import SEO from '../components/SEO';
 
 // 2. pop in here via destructuring  data out of props
