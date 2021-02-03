@@ -1,5 +1,4 @@
-import React from 'React';
-import styled from 'styled-components';
+import React from 'react';
 import { LoadingItemStyled, ItemStyled } from '../styles/GridStyles';
 
 export default function LoadingGrid({ count }) {

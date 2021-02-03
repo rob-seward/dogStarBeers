@@ -1,6 +1,5 @@
 import React from 'react';
 import Img from 'gatsby-image';
-import SingleBeerPage from '../templates/SingleBeer';
 import BreweryFormMenuStyles from '../styles/BreweryFormMenuStyles';
 import formatMoney from '../utils/formatMoney';
 import calcBeerPricing from '../utils/calcBeerPricing';

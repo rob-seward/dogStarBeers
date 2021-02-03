@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 
 // create and order context
 const OrderContext = React.createContext();

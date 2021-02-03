@@ -8,7 +8,7 @@ export default function ItemGrid({ items }) {
       {items.map((item) => (
         <ItemStyled>
           <p>{item.name}</p>
-          <img src={`${item.image.asset.url}`} />
+          <img alt="imagesurl" src={`${item.image.asset.url}`} />
         </ItemStyled>
       ))}
     </LoadingItemStyled>

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Pagination from './Pagination';
 
 const FreshBeersListStyled = styled.div`
   display: grid;
@@ -61,7 +60,7 @@ function FreshSingleBeer({ beer }) {
   );
 }
 
-export default function FreshBeersList({ allBeers, pageContext }) {
+export default function FreshBeersList({ allBeers }) {
   /* console.log(pageContext.currentPage); */
   return (
     <FreshBeersListStyled>

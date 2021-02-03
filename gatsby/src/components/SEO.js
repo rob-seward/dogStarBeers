@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { FaBeer } from '@react-icons/all-files/fa/FaBeer';
 
 export default function SEO({ children, location, description, title, image }) {
   const { site } = useStaticQuery(graphql`

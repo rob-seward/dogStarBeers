@@ -1,4 +1,4 @@
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React from 'react';
 import FreshBeersList from '../components/FreshBeersList';
 import Pagination from '../components/Pagination';
