@@ -2,18 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 
 export const LoadingItemStyled = styled.div`
-  background-color: var(--yellow);
+  background-color: var(--red);
   display: grid;
-  gap: 1rem;
+  margin-top: 1rem;
+  padding: 2rem;
 `;
 
 export const ItemStyled = styled.div`
-  background-color: var(--blue);
+  background-color: var(--red);
   text-align: center;
   position: relative;
+  margin-top: 0rem;
+
   img {
-    border: 1px solid red;
-    height: auto;
+    width: auto;
   }
   @keyframes shine {
     from {
@@ -32,7 +34,7 @@ export const ItemStyled = styled.div`
       var(--shine) 40px,
       var(--background) 80px
     );
-    background-size: 200px;
+    background-size: 100px;
     animation: shine 1s infinite linear;
   }
 `;

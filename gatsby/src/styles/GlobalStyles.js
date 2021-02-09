@@ -85,6 +85,39 @@ const GlobalStyles = createGlobalStyle`
     display: inline-block;
   }
 
+  .outLineBox {
+    font-size: 4rem;
+    text-align: center;
+    border: solid 0.125em #000;
+    position: relative;
+    box-shadow: 0 0.5625em 0 -0.3125em;
+    padding: 0.46875em;
+    overflow: visible;
+  }
+
+  .PageTop {
+  margin: 1rem;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column: span 2;
+  background-color: var(--red);
+  .bestBeer {
+    margin-top: 3rem;
+    color: var(--black);
+    justify-self: center;
+  }
+  .blurb {
+    padding: 3rem;
+  }
+
+  .openTime {
+    justify-self: center;
+    align-self: top;
+  }
+
+
 `;
 
 export default GlobalStyles;

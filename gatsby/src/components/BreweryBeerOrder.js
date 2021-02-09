@@ -8,7 +8,6 @@ export default function BreweryBeerOrder({ order, beers, removeFromOrder }) {
   return (
     <>
       <p>You have {order.length} items in your order so far!</p>
-      <p>Tomorrow will try to persists users infor from useform</p>
 
       {order.map((singleOrder, index) => {
         // find the beer

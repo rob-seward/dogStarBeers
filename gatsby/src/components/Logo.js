@@ -49,15 +49,15 @@ const LogoStyles = styled.div`
     z-index: -2;
   }
   .slicks {
-    transform: scale(1.4);
+    transform: scale(1.5);
     display: block;
     text-shadow: 0.18em 0.18em 0 rgba(0, 0, 0, 0.2);
     perspective: 100px;
   }
   .letter {
-    font-size: 8em;
-    color: var(--blue);
-    --scale: 0.6;
+    font-size: 5em;
+    color: var(--white);
+    --scale: 1;
     --rotate: -10deg;
     --translateX: 0;
     --translateY: 0;
@@ -66,7 +66,7 @@ const LogoStyles = styled.div`
       translateX(var(--translateX)) translateY(var(--translateY))
       rotateX(var(--rotateX));
     display: inline-block;
-    line-height: 1.5;
+    line-height: 2.5;
     transition: transform 0.3s;
     &.d {
       --translateX: -0em;

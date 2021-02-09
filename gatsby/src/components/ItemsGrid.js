@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { LoadingItemStyled, ItemStyled } from '../styles/GridStyles';
 
 export default function ItemGrid({ items }) {
@@ -7,7 +8,9 @@ export default function ItemGrid({ items }) {
     <LoadingItemStyled>
       {items.map((item) => (
         <ItemStyled>
-          <p>{item.name}</p>
+          <p>
+            <span className="">{item.name}</span>
+          </p>
           <img alt="imagesurl" src={`${item.image.asset.url}`} />
         </ItemStyled>
       ))}

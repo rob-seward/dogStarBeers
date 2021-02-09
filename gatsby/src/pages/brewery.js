@@ -42,8 +42,14 @@ export default function breweryPage({ data }) {
   return (
     <>
       <BreweryFormStyles onSubmit={submitOrder}>
+        <div className="PageTop">
+          <p className="outLineBox">Order Beer via Custom Hook</p>
+        </div>
         <fieldset disabled={loading}>
-          <legend>users info</legend>
+          <legend>
+            A custom react hook is used for state and server-less function to
+            send it...Cool!
+          </legend>
           <label htmlFor="name">
             Name
             <input

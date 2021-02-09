@@ -26,14 +26,12 @@ const NavStyles = styled.nav`
   }
 
   ul {
-    margin: 0;
-    padding: 0.5rem;
     text-align: center;
     align-items: center;
     list-style: none;
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: 30% 1fr 1fr 1fr 1fr 20%;
+    grid-template-columns: 15% 1fr 1fr 1fr 1fr 10%;
   }
 `;
 

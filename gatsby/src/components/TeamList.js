@@ -51,7 +51,13 @@ export default function TeamList({ members }) {
   return (
     <>
       <div className="center">
-        <h1>THE BEER TEAM</h1>
+        <div className="PageTop">
+          <p className="outLineBox"> Sanity Headless CMS</p>
+          <p>
+            The schema's are set up in CMS so we can add and remove team members
+            which are pulled in at build time (differnet to the homepage).
+          </p>
+        </div>
 
         <MemberGridStyled>
           {members.map((member) => (
