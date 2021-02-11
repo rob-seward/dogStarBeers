@@ -103,15 +103,18 @@ const GlobalStyles = createGlobalStyle`
   grid-template-rows: auto;
   grid-column: span 2;
   background-color: var(--red);
+  
+  .blurb {
+    text-align: center;
+    align-content: center;
+    align-self: top;
+    font-size: clamp(2rem, 2.5vw, 10rem);
+  }
   .bestBeer {
     margin-top: 3rem;
     color: var(--black);
     justify-self: center;
   }
-  .blurb {
-    padding: 3rem;
-  }
-
   .openTime {
     justify-self: center;
     align-self: top;

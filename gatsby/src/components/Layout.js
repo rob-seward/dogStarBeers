@@ -13,11 +13,12 @@ const ContentStyles = styled.div`
 `;
 
 const SiteBorderStyles = styled.div`
-
- color: var(--white);
- border: 2rem solid;
- background-size:1500px;
- 
+  color: var(--white);
+  border: 2rem solid;
+  background-size: 1500px;
+  @media (max-width: 1100px) {
+    margin-left: 0.2rem;
+    margin-right: 1.5rem;
   }
 `;
 

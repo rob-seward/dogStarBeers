@@ -20,7 +20,7 @@ const FreshSingleBeerStyled = styled.div`
     position: relative;
     box-shadow: 0 0.5625em 0 -0.3125em;
     padding: 0.46875em;
-    overflow: visible;
+    overflow: hidden;
   }
   .beerRatings {
     margin-top: 1rem;
@@ -39,6 +39,19 @@ const FreshSingleBeerStyled = styled.div`
   }
   p {
     margin: 0;
+  }
+  @media (max-width: 500px) {
+    align-content: center;
+    grid-template-columns: 1;
+    background-color: pink;
+    font-size: 2rem;
+    padding: 0em;
+    .beerPrice {
+      grid-row-start: 2;
+    }
+    .beerRatings {
+      grid-row-start: 5;
+    }
   }
 `;
 

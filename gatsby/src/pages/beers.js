@@ -11,7 +11,7 @@ export default function BeersPage({ data }) {
       <SEO title="Beers" />
       <div />
       <p className="outLineBox">Rendering Out From Graphql</p>
-      <p>
+      <p className="blurb">
         As part of the build process Gatsby pulls out all the required data from
         the CMS and loads into graphql. This page's components{' '}
         <span className="mark"> query graphql</span>, map over and render out

@@ -8,10 +8,10 @@ export default function freshBeersPage({ data, pageContext }) {
   const allBeers = data.allBeer.nodes;
 
   return (
-    <div className="PageTop">
+    <div className="">
       <SEO title={`Freshbeers Page ${pageContext.currentPage || 1}`} />
       <p className="outLineBox">Gets Beers From an External API</p>
-      <p>
+      <p className="blurb">
         This page gets the beers from an external API, loads into graphql and
         paginates depending on how many beers we want on page.
       </p>
@@ -22,6 +22,7 @@ export default function freshBeersPage({ data, pageContext }) {
         skip={pageContext.skip}
         base="/freshbeers"
       />
+
       <FreshBeersList allBeers={allBeers} />
     </div>
   );

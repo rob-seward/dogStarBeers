@@ -15,41 +15,48 @@ const HomePageTopStyles = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-column: span 2;
+  //grid-column: span 2;
   background-color: var(--red);
   .bestBeer {
     margin-top: 3rem;
     color: var(--black);
     justify-self: center;
   }
-  .blurb {
-    padding: 3rem;
-  }
 
-  .openTime {
-    justify-self: center;
+  .openTime,
+  .blurb {
+    text-align: center;
+    align-content: center;
     align-self: top;
+    font-size: clamp(2rem, 2.5vw, 10rem);
+  }
+  .blurb {
+    margin-top: 4rem;
   }
 `;
 
 const HomePageBeersStyles = styled.div`
+  --columns: 4;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  @media (max-width: 500px) {
+    --columns: 2;
+  }
 `;
 
 const HomePageStyles = styled.div`
-.beerMasters {
-  margin-top: -0.5rem;
+  .beerMasters {
+    text-align: center;
+    margin-top: 1rem;
     font-size: 2rem;
-    padding: 3rem;
+    font-size: clamp(2rem, 2.5vw, 10rem);
   }
+
+  display: grid;
+  --columns: 1;
   background-color: var(--red);
-  font-size: 4rem;
   margin: 1rem;
   padding: 4rem;
-  display: grid;
-  grid-template-columns: 1fr);
-  
 `;
 
 function Beerteam({ beermasters }) {
@@ -74,7 +81,7 @@ export default function homePage() {
     <>
       <SEO title="Home" />
       <HomePageTopStyles>
-        <p className="openTime">Open Every Day From 770px</p>
+        <p className="openTime">Open Every Day From 370-770px</p>
         <HomePageBeersStyles>
           <img
             className="homePageBeer"
@@ -128,7 +135,7 @@ export default function homePage() {
 
       <HomePageStyles>
         <p className="outLineBox">Today's Beer Masters</p>
-        <p className="beerMasters">
+        <p className="blurb beerMasters">
           Prism sartorial aesthetic tumblr vaporware austin. 8-bit DIY
           church-key bespoke farm-to-table. Vaporware taxidermy cloud bread tofu
           tbh. Fingerstache mumblecore tousled vexillologist tattooed shaman,
