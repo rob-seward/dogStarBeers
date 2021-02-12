@@ -88,6 +88,7 @@ export async function turnFreshBeersNodesIntoPages({ graphql, actions }) {
   // calculate the nimber of pages we are going to need
 
   const pageCount = Math.ceil(data.allBeer.totalCount / pageSize);
+  console.log(pageCount);
   // check we have the 3 variables we need pulling through - totalCount / pageSize / pageCount
   /* console.log(
     `There are ${data.beerNodes.totalCount} with ${pageSize} per page and there are ${pageCount} pages in total`

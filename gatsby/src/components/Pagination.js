@@ -7,29 +7,35 @@ const PaginationStyles = styled.div`
   align-content: center;
   align-items: center;
   justify-items: center;
-  border: 1px solid var(--white);
+  border: 1px solid var(--grey);
   margin: 2rem 0;
   border-radius: 5px;
   text-align: center;
   & > * {
     padding: 1rem;
     flex: 1;
-    border-right: 1px solid var(--black);
+    border-right: 1px solid var(--grey);
     text-decoration: none;
     &[aria-current],
     &.current {
-      color: var(--white);
+      color: var(--red);
     }
     &[disabled] {
       pointer-events: none;
-      color: var(--white);
+      color: var(--grey);
     }
   }
+
   @media (max-width: 800px) {
     .word {
       display: none;
     }
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0.75rem;
+    overflow: scroll;
   }
 `;
 

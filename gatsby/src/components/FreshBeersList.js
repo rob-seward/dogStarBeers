@@ -20,7 +20,7 @@ const FreshSingleBeerStyled = styled.div`
     position: relative;
     box-shadow: 0 0.5625em 0 -0.3125em;
     padding: 0.46875em;
-    overflow: hidden;
+    overflow: visible;
   }
   .beerRatings {
     margin-top: 1rem;
@@ -40,29 +40,29 @@ const FreshSingleBeerStyled = styled.div`
   p {
     margin: 0;
   }
-  @media (max-width: 500px) {
-    align-content: center;
-    grid-template-columns: 1;
-    background-color: pink;
-    font-size: 2rem;
-    padding: 0em;
-    .beerPrice {
-      grid-row-start: 2;
-    }
-    .beerRatings {
-      grid-row-start: 5;
-    }
-  }
 `;
 
 function FreshSingleBeer({ beer }) {
-  const rating = Math.ceil(beer.rating.average);
+  let rating;
+  let reviews;
+  if (beer.rating === null) {
+    rating = 5;
+  } else {
+    rating = Math.ceil(beer.rating.average);
+  }
+
+  if (beer.rating === null) {
+    reviews = 0;
+  } else {
+    reviews = beer.rating.reviews;
+  }
+
   return (
     <FreshSingleBeerStyled>
       <p className="beerName">{beer.name}</p>
       <p className="beerPrice">{beer.price}</p>
       <img src={beer.image} alt={beer.name} />
-      <p className="beerRatings">{`Ratings ${beer.rating.reviews}`}</p>
+      <p className="beerRatings">{`Ratings ${reviews}`}</p>
       <p className="beerTitle" title={`${rating} out of 5 stars`}>
         {`⭐`.repeat(rating)}
         <span style={{ filter: `grayscale(100%)` }}>
