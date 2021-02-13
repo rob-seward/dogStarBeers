@@ -40,6 +40,9 @@ const FreshSingleBeerStyled = styled.div`
   p {
     margin: 0;
   }
+  @media (max-width: 500px) {
+    --columns: 1;
+  }
 `;
 
 function FreshSingleBeer({ beer }) {

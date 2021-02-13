@@ -93,6 +93,8 @@ const GlobalStyles = createGlobalStyle`
     box-shadow: 0 0.5625em 0 -0.3125em;
     padding: 0.46875em;
     overflow: visible;
+    background-color: red;
+    margin: 1rem;
   }
 
   .PageTop {
@@ -116,6 +118,7 @@ const GlobalStyles = createGlobalStyle`
     justify-self: center;
   }
   .openTime {
+    
     justify-self: center;
     align-self: top;
   }

@@ -4,6 +4,7 @@ const BreweryFormStyles = styled.form`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: -1rem;
 
   fieldSet {
     grid-column: span 2;

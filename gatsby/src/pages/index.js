@@ -23,14 +23,15 @@ const HomePageTopStyles = styled.div`
     justify-self: center;
   }
 
-  .openTime,
+  .openTime {
+    font-size: clamp(3rem, 2.5vw, 10rem);
+    text-align: center;
+  }
   .blurb {
     text-align: center;
     align-content: center;
     align-self: top;
     font-size: clamp(2rem, 2.5vw, 10rem);
-  }
-  .blurb {
     margin-top: 4rem;
   }
 `;
@@ -47,7 +48,7 @@ const HomePageBeersStyles = styled.div`
 const HomePageStyles = styled.div`
   .beerMasters {
     text-align: center;
-    margin-top: 1rem;
+
     font-size: 2rem;
     font-size: clamp(2rem, 2.5vw, 10rem);
   }
@@ -55,7 +56,8 @@ const HomePageStyles = styled.div`
   display: grid;
   --columns: 1;
   background-color: var(--red);
-  margin: 1rem;
+  margin: 2rem 1rem;
+
   padding: 4rem;
 `;
 

@@ -6,7 +6,7 @@ import Pagination from '../components/Pagination';
 import SEO from '../components/SEO';
 
 const freshBeersPageStyled = styled.div`
-  p {
+  p.outLineBox {
     background-color: red;
   }
 `;

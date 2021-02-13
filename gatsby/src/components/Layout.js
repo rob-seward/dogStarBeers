@@ -20,6 +20,9 @@ const SiteBorderStyles = styled.div`
     margin-left: 0.2rem;
     margin-right: 1.5rem;
   }
+  @media (max-width: 500px) {
+    margin: -2rem;
+  }
 `;
 
 export default function Layout({ children }) {

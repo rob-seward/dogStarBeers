@@ -9,6 +9,11 @@ const MemberGridStyled = styled.div`
   grid-template-columns: repeat(var(--columns), minmax(100px, 1fr));
   gap: 1rem;
   padding-top: 5rem;
+  @media (max-width: 500px) {
+    --columns: 1;
+    margin: -10rem 1rem;
+    background-color: var(--red);
+  }
 `;
 
 const SingleMemberStyled = styled.div`
@@ -21,8 +26,13 @@ const SingleMemberStyled = styled.div`
   .memDescription {
     text-align: left;
     padding-top: 1rem;
+    @media (max-width: 500px) {
+      text-align: center;
+      margin: 2rem;
+    }
   }
   .favBeer {
+    text-align: center;
     background-color: var(--yellow);
     padding: 1rem;
     margin: 2rem;
@@ -49,22 +59,20 @@ function SingleMember({ member }) {
 
 export default function TeamList({ members }) {
   return (
-    <>
-      <div className="center">
-        <div className="PageTop">
-          <p className="outLineBox"> Sanity Headless CMS</p>
-          <p>
-            The schema's are set up in CMS so we can add and remove team members
-            which are pulled in at build time (differnet to the homepage).
-          </p>
-        </div>
-
-        <MemberGridStyled>
-          {members.map((member) => (
-            <SingleMember key={member.id} member={member} />
-          ))}
-        </MemberGridStyled>
+    <div>
+      <div className="PageTop">
+        <p className="outLineBox"> Sanity Headless CMS</p>
+        <p className="blurb">
+          The schema's are set up in CMS so we can add and remove team members
+          which are pulled in at build time (differnet to the homepage).
+        </p>
       </div>
-    </>
+
+      <MemberGridStyled>
+        {members.map((member) => (
+          <SingleMember key={member.id} member={member} />
+        ))}
+      </MemberGridStyled>
+    </div>
   );
 }
