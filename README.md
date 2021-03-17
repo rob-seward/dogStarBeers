@@ -1,5 +1,8 @@
 # dogStarBeers
+https://suspicious-keller-1e3df8.netlify.app/
+
 Gatsby-Sanity-Netlify
+React hooks and Netlify serveless functions
 
 https://suspicious-keller-1e3df8.netlify.app/
 
